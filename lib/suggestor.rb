@@ -7,13 +7,22 @@ class Suggestor
 
   def combine
     ideas = Hash[list.flatten.uniq.map {|v| [v, 0]}]
+    max_value = ideas.length
 
     list.each do |set|
-      set.reverse.each_with_index do |item, index|
-        ideas[item] += (index+1)
+      set.each_with_index do |item, index|
+        ideas[item] += (max_value - index)
       end
     end
 
-    ideas.sort_by { |k,v| v }.reverse.map(&:first)
+    sorted = ideas.sort_by { |k,v| v }.reverse
+
+    sets = {}
+    sorted.each do |item|
+      sets[item[1]] ||= []
+      sets[item[1]] << item[0]
+    end
+
+    sets.map { |_key, value| value }
   end
 end

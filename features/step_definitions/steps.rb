@@ -7,5 +7,11 @@ When(/^Combining the lists$/) do
 end
 
 Then(/^The idea order should be "(.*?)"$/) do |combined|
-  expect(@result).to eql(combined.chars)
+  sets = combined.split(',')
+
+  sets.each_with_index do |set, index|
+    set.chars.each do |item|
+      expect(@result[index]).to include(item)
+    end
+  end
 end

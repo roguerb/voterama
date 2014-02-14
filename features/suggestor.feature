@@ -8,6 +8,8 @@ Feature: Suggest Top Ideas
     Then The idea order should be "<combined>"
 
     Scenarios: Two Attendees with algorithm
-      | list1 | list2 | combined |
-      | abcde | abcde | abcde    |
-      | abcde | edcba | cbdae    |
+      | list1 | list2 | combined  |
+      | abcde | abcde | a,b,c,d,e |
+      | abcde | edcba | cbdae     |
+      | abcde | bdace | b,a,d,c,e |
+#      | abcde | edcba | c,bd,ae   |
