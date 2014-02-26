@@ -1,11 +1,5 @@
-class Suggestor
-  attr_reader :list
-
-  def initialize(list)
-    @list = list
-  end
-
-  def combine
+class RankedList::SimpleRanker
+  def self.call(list)
     ideas = Hash[list.flatten.uniq.map {|v| [v, 0]}]
     max_value = ideas.length
 
