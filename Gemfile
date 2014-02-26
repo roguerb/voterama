@@ -25,11 +25,11 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-cucumber'
   gem 'guard-rspec'
-  gem 'pry-rails'
-  gem 'pry-debugger'
 end
 
 group :test, :development do
+  gem 'pry-rails'
+  gem 'pry-debugger'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl'
