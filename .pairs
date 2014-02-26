@@ -1,0 +1,8 @@
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  jh: house9; jesse
+  lb: lexun; luke
+email:
+  prefix: pair
+  domain: roguerb.com
+  no_solo_prefix: true
