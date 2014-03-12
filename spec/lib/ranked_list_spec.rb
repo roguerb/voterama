@@ -6,7 +6,6 @@ describe RankedList do
 
     context "when passed a callable object" do
       let(:ranker) { double("ranker") }
-
       before { allow(ranker).to receive(:call) }
 
       it "calls call on the ranker" do
