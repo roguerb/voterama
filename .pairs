@@ -2,6 +2,7 @@ pairs:
   # <initials>: <Firstname> <Lastname>[; <email-id>]
   jh: house9; jesse
   lb: lexun; luke
+  sc: seanculver; sean
 email:
   prefix: pair
   domain: roguerb.com
