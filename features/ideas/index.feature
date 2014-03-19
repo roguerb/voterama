@@ -5,5 +5,5 @@ Feature: List the Ideas
 
   Scenario: Successful listing
     Given there are ideas
-    When I go to the ideas page
+    When I visit the "ideas" page
     Then I should see a list of ideas

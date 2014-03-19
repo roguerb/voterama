@@ -4,8 +4,8 @@ Feature: Create an Idea
   I want to create an idea
 
   Scenario: Successful creation
-    Given I am on the create idea page
-    When I fill out the idea form
-    And I submit the form
+    Given I am on the "ideas" page
+    When I click on "New Idea"
+    And I submit the idea form
     Then I should see a success message
     And I should see my idea

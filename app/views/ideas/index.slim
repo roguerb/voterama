@@ -1,5 +1,8 @@
 h1 The Best Ideas In The World
 
+div
+  = link_to "New Idea", new_idea_path
+
 - @ideas.each do |idea|
   div
     h3= idea.title
