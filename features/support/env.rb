@@ -56,3 +56,5 @@ end
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+# Use Factory Girl methods without namespace
+World(FactoryGirl::Syntax::Methods)

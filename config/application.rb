@@ -27,5 +27,8 @@ module Voterama
 
     # Autoload files in lib/
     config.autoload_paths += %W(#{config.root}/lib)
+
+    # Raise an error if an invalid locale is passed
+    config.i18n.enforce_available_locales = true
   end
 end
