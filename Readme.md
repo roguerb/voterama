@@ -1,8 +1,13 @@
 # Voterama!
 
+---
+
+[![Code Climate](https://codeclimate.com/github/roguerb/voterama.png)](https://codeclimate.com/github/roguerb/voterama)
+
+---
+
 * Enter ideas for a meetup
-* Attendees get n votes per meeting
+* Attendees lists are ranked together
 * Select a random idea
 * Mark ideas completed
-* Propose/Vote to remove items
 * Authenticate with meetup.com
