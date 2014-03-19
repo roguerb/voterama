@@ -9,13 +9,13 @@ class IdeasController < ApplicationController
 
   def create
     # TODO: send flash with redirect - wierdness
-    idea = Idea.new(idea_params)
+    @idea = Idea.new(idea_params)
 
-    if idea.save
+    if @idea.save
       flash[:notice] = "Idea synchronized"
       redirect_to ideas_path
     else
-      raise "TODO: validations"
+      render :new
     end
   end
 
