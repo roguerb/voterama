@@ -13,7 +13,7 @@ class IdeasController < ApplicationController
 
     if idea.save
       flash[:notice] = "Idea synchronized"
-      redirect_to new_idea_path
+      redirect_to ideas_path
     else
       raise "TODO: validations"
     end

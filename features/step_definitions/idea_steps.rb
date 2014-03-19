@@ -31,8 +31,6 @@ Then(/^I should see a list of ideas$/) do
 end
 
 Then(/^I should see my idea$/) do
-  idea = Idea.first
-
-  expect(idea.title).to eq "Woah Neo"
-  expect(idea.description).to eq "I'm the one"
+  expect(page).to have_content "Woah Neo"
+  expect(page).to have_content "I'm the one"
 end
